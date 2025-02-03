@@ -13,7 +13,7 @@ package ru.ybrynkin.dmdev.hw.task1;
 public class Task1 {
 
   private static void printQuarterOfHour(int minutes) {
-    if (minutes > 0) {
+    if (minutes >= 0) {
       int quarter = minutes / 15 + 1;
       switch (quarter) {
         case 1 -> System.out.println("1st quarter");
