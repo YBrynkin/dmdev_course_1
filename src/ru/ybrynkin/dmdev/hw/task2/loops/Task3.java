@@ -44,6 +44,10 @@ public class Task3 {
     System.out.println("Broker: " + brokerFunds);
   }
 
+  private static void test(int x, int y, int z){
+
+  }
+
   public static void main(String[] args) {
     printCurrentFunds(6);
   }

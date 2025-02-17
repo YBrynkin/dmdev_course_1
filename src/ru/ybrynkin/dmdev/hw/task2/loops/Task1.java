@@ -18,42 +18,42 @@ public class Task1 {
   private static final Scanner sc = new Scanner(System.in);
 
   private static void processInputNumber(int inputNumber) {
-    String evenNumbers = getEvenNumbersString(inputNumber);
-    String oddNumbers = getOddNumbersString(inputNumber);
-    printProcessingResult(inputNumber, evenNumbers, oddNumbers);
+    int evenNumbersCount = getEvenNumbersString(inputNumber);
+    int oddNumbersCount = getOddNumbersString(inputNumber);
+    printProcessingResult(inputNumber, evenNumbersCount, oddNumbersCount);
   }
 
-  private static String getOddNumbersString(int inputNumber) {
+  private static int getOddNumbersString(int inputNumber) {
     String number = String.valueOf(Math.abs(inputNumber));
-    StringBuilder oddNumbers = new StringBuilder();
+    int count = 0;
     for (int i = 0; i < number.length(); i++) {
       int num = Character.getNumericValue(number.charAt(i));
       if (num % 2 != 0) {
-        oddNumbers.append(num);
+        count++;
       }
     }
-    return oddNumbers.toString();
+    return count;
   }
 
-  private static String getEvenNumbersString(int inputNumber) {
+  private static int getEvenNumbersString(int inputNumber) {
     String number = String.valueOf(Math.abs(inputNumber));
-    StringBuilder evenNumbers = new StringBuilder();
+    int count = 0;
     for (int i = 0; i < number.length(); i++) {
       int num = Character.getNumericValue(number.charAt(i));
       if (num % 2 == 0) {
-        evenNumbers.append(num);
+        count++;
       }
     }
-    return evenNumbers.toString();
+    return count;
   }
 
 
-  private static void printProcessingResult(int inputNumber, String evenNumbers,
-      String oddNumbers) {
+  private static void printProcessingResult(int inputNumber, int evenNumbersCount,
+      int oddNumbersCount) {
     System.out.printf(
         "The entered number is %d.\n %d - the number of even numbers; %d - the number of odd numbers\n",
         inputNumber,
-        evenNumbers.length(), oddNumbers.length());
+        evenNumbersCount, oddNumbersCount);
   }
 
   public static void main(String[] args) {
