@@ -1,5 +1,7 @@
 package ru.ybrynkin.dmdev.hw.task3.oop;
 
+import ru.ybrynkin.dmdev.hw.task3.oop.building.Building;
+
 public class BuildingRunner {
 
   public static void main(String[] args) {

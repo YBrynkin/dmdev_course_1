@@ -1,4 +1,4 @@
-package ru.ybrynkin.dmdev.hw.task3.oop;
+package ru.ybrynkin.dmdev.hw.task3.oop.building;
 
 public class Room {
 

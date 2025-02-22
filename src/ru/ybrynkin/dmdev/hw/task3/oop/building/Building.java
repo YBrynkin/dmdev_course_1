@@ -1,4 +1,4 @@
-package ru.ybrynkin.dmdev.hw.task3.oop;
+package ru.ybrynkin.dmdev.hw.task3.oop.building;
 
 /**
  * This class is a template for an apartment building with one entrance. To create a building, enter
