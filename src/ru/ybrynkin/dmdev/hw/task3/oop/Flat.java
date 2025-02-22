@@ -33,6 +33,10 @@ public class Flat {
 
   public void print() {
     System.out.printf("The flat with number %d contains %d rooms\n", number, rooms.length);
+    for (Room room : rooms) {
+      System.out.print(" ");
+      room.print();
+    }
   }
 
 }

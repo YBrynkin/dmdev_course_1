@@ -36,16 +36,7 @@ public class Building {
     for (int i = 0; i < building.floors.length; i++) {
       System.out.print(" ");
       building.floors[i].print();
-      for (int j = 0; j < building.floors[i].getFlats().length; j++) {
-        System.out.print("  ");
-        building.floors[i].getFlats()[j].print();
-        for (int k = 0; k < building.floors[i].getFlats()[j].getRooms().length; k++) {
-          System.out.printf("   " + "#%d ", k + 1);
-          building.floors[i].getFlats()[j].getRooms()[k].print();
-        }
-      }
     }
-
   }
 
 }

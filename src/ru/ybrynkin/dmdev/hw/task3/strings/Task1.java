@@ -14,12 +14,17 @@ public class Task1 {
   private static String processString(String str) {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < str.length(); i++) {
-      String currChar = String.valueOf(str.charAt(i)).toUpperCase();
+      String currChar = getFormatedCharFromString(str, i);
       if (!sb.toString().contains(currChar) && !currChar.equals(SPACE)) {
         sb.append(currChar);
       }
     }
     return sb.toString();
+  }
+
+  private static String getFormatedCharFromString(String str, int index) {
+    String currChar = String.valueOf(str.charAt(index)).toUpperCase();
+    return currChar;
   }
 
   public static void main(String[] args) {

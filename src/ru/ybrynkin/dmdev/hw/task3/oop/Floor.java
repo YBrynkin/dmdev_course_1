@@ -37,6 +37,10 @@ public class Floor {
 
   public void print() {
     System.out.printf("Floor with number %d contains %d apartments\n", number, flats.length);
+    for (Flat flat : flats) {
+      System.out.print("  ");
+      flat.print();
+    }
   }
 
   // Method to generate a random integer within a specified range [min, max]

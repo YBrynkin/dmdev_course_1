@@ -9,6 +9,7 @@ public class Room {
   }
 
   public void print() {
+    System.out.print("   ");
     if (isCommunicatingRoom) {
       System.out.println("The room is a walk-through");
     } else {

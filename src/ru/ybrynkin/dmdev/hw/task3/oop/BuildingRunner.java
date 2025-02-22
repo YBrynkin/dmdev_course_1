@@ -6,7 +6,7 @@ public class BuildingRunner {
     Building building1 = new Building(1, 10, 4);
     building1.print();
 
-    Building building2 = new Building(2, 3, 3);
+    Building building2 = new Building(2, 3, 5);
     Building.printAllInformation(building2);
   }
 
